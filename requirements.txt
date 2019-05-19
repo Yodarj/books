@@ -123,7 +123,7 @@ Pygments==2.3.1
 pylint==2.3.1
 pylint-django==2.0.6
 pylint-plugin-utils==0.5
-pyodbc==4.0.26
+
 pyOpenSSL==19.0.0
 pyparsing==2.3.1
 pyreadline==2.1
