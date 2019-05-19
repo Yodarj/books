@@ -1,0 +1,22 @@
+<head>
+{% load static %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+
+
+<body>
+
+<a href='/' class="waves-effect waves-light btn">Strona główna</a>
+<a href='/list_of_books/' class="waves-effect waves-light btn">Lista książek</a>
+<a href='/add/' class="waves-effect waves-light btn">Dodawanie książek</a>
+<a href='/import/' class="waves-effect waves-light btn">Importowanie książek</a>
+
+<br><br>
+
+{% block content %}
+{% endblock %}
+
+</body>

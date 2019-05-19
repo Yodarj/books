@@ -1,0 +1,23 @@
+{% extends "warehouse/header.html" %}
+
+{% block content %}
+
+<p><h5>Lista książek</h5></p>
+
+    <form method="GET" action="{% url 'warehouse:search' %}" id="searchform">
+        <input name="q" value="{{ request.GET.q }}" id="searchbox" type="text" placeholder="Search..."/>
+        <button class="waves-effect waves-light btn-small" type='submit'>Szukaj</button>
+    </form>
+
+{% for boo in books %}
+    <div><p>Tytuł: <b>{{boo.title}}</b></p>
+    <p>Autorzy: {{boo.authors}}</p>
+    <p>Rok wydania: {{boo.publishedDate}}</p>
+    <p>Kategoria: {{boo.categories}}</p>
+    <p>Opis: {{boo.desciption}}</p></div>
+
+    <br><br>
+{% endfor %}
+
+{% endblock %}
+

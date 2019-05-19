@@ -1,0 +1,16 @@
+{% extends "warehouse/header.html" %}
+
+{% block content %}
+
+<p><h5>Importowanie z googleapis</h5></p>
+
+  <form method="get">
+    <input type="text" name="book">
+    <button class="btn waves-effect waves-light", type="submit">Znajdź na googleapis</button>
+  </form>
+  {% if book %}
+    <p>{{ book }}</p>
+  {% endif %}
+
+{% endblock %}
+
